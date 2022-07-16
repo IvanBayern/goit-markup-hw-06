@@ -243,15 +243,91 @@
                      <li><a class="footer-social-link" href=""><svg width="20px" height="20px" class="footer-social-icon" aria-label="ссылка на linkedin"><use href="./images/icons.svg#icon-linkedin-1"></use></svg></a></li>
                   </ul>
            </div>
+        <div class="footer-form-container">
+            <h2 class="footer-edd">Подпишитесь на рассылку</h2>
+            <form class="footer-form" name="footer-form" autocomplete="on">
+                <input class="footer-form-email" type="email" id="footer-form-email" name="email" placeholder="E-mail" required>
+                <label class="visually-hidden" for="footer-form-email">Почта</label>
+                
+                <button class="footer-form-btn button hero-btn" type="submit">Подписаться
+                    <svg width="24px" height="24px" class="footer-form-btn-icon">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+        
+            </form>
+        </div>
         </div>
 
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop s-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close><svg width="11px" height="11px" class="modal-close" aria-label="закрыть модальное окно">
                 <use href="./images/icons.svg#icon-vector"></use>
             </svg></button>
+            <div class="modal-container">
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+               <form class="form" name="modal-form" autocomplete="on" novalidate>
+                <fieldset>
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-name">Имя</label>
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="user-name" type="text" name="name">
+                            <svg width="12px" height="12px" class="form-field-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-person-black"></use>
+                            </svg>
+                        </div>
+                    
+                    </div>
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-tel">Телефон</label>
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="user-tel" type="tel" name="tel">
+                            <svg width="12px" height="12px" class="form-field-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
+                        </div>
+                    
+                    </div>
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-email">Почта</label>
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="user-email" type="text" name="email">
+                            <svg width="12px" height="12px" class="form-field-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
+                        </div>
+                    
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="form-field-text">
+                        <label class="form-field-label" for="user-comment">Комментарий</label>
+                        <textarea class="form-field-textarea" name="user-comment" id="user-comment" placeholder="Введите текст"></textarea>
+                    
+                    </div>
+                </fieldset>
+                
+                <div class="form-field-checkbox">
+                    <div class="checkbox-control">
+                        <input class="checkbox-input" id="term-condition" type="checkbox" name="term-condition">
+                        <svg width="16px" height="15px" class="checkbox-icon" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-vector2"></use>
+                        </svg>
+                        <svg width="16px" height="15px" class="checkbox-icon-checked" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-icon-check"></use>
+                        </svg>
+                    </div>
+                    <label class="checkbox-label" for="term-condition">Соглашаюсь с рассылкой и принимаю&nbsp;
+                        <a class="form-field-link" href="">Условия договора</a></label>
+                </div>
+                <div class="form-field">
+                    <button class="button hero-btn modal-form-btn" type="submit">Отправить</button>
+                </div>
+               </form>
+            </div>
         </div>
     </div>
 

@@ -86,6 +86,11 @@ ul
         margin-left: 0;
         margin-right: 0;
     }
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 .list {
         padding-left: 0;
         margin-top: 0;
@@ -723,7 +728,170 @@ address
     
 
 }
+.footer-form-container{
+    margin-left: auto;
+}
+.footer-form{
+    display: flex;
+    align-items: center;
+}
+.footer-form-email{
+    display: flex;
+        align-items: center;
+        min-width: 358px;
+        height: 50px;
+        padding: 0;
+        padding-left: 16px;
+        margin-right: 12px;
+    
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+}
+.footer-form-email:focus{
+    border-color: var(--blu-cl);
+}
+.footer-form-btn{
+    margin-left: 0;
+    margin-right: 0;
+    width: 200px;
+    height: 50px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+.footer-form-btn-icon{
+    width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        fill: var(--white-txt-cl);
+}
+.form-field-label{
+    display: block;
+    margin-bottom: 4px;
+    
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    
+}
+.form-field-input{
+    width: 100%;
+    height: 40px;
+    padding: 12px 12px 12px 42px;
+    border:1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none; 
+    
+}
+.form-field-input:focus{
+    border-color: var(--blu-cl);
+}
+.form-field-input:focus + .form-field-icon{
+    fill: var(--blu-cl);
+}
+.form-field-textarea:focus-within{
+    border: 1px solid var(--blu-cl);
+}
+.form-field{
+    margin-bottom: 10px;
+}
+.form-field-inner{
+    position: relative;
+}
+.form-field-icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    fill: var(--black-txt-cl);
+}
+.form-field-textarea{
+    padding: 12px 16px;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+}
+.modal-form-btn{
+    width: 200px;
+    height: 50px;
+    padding: 10px 55px;
 
+}
+.form-field-text{
+    margin-bottom: 20px;
+}
+.form-field-checkbox{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.checkbox-input{
+    appearance: none;
+}
+/*.checkbox-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+
+   
+    
+
+}
+/*.checkbox-icon{
+    opacity: 0;
+    fill: var(--black-txt-cl);
+}
+.checkbox-input:checked + .checkbox-icon{
+    opacity: 1;
+
+}*/
+.checkbox-control{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 24px;
+        
+}
+.checkbox-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+
+}
+
+.checkbox-input:checked~.checkbox-icon {
+    opacity: 0;
+}
+
+.checkbox-icon-checked {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    opacity: 0;
+
+}
+
+.checkbox-input:checked~.checkbox-icon-checked {
+    opacity: 1;
+}
 .backdrop{
     position: fixed;
     top: 0;
@@ -740,7 +908,8 @@ address
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    min-height: 581px;
+    max-height: 581px;
+    height: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--white-txt-cl);
@@ -769,4 +938,19 @@ address
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+.modal-container{
+    padding:40px ;
+}
+.modal-title{
+    font-family:var(--main-font);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color:var(--black-txt-cl);
+        margin-bottom: 12px;
 }
