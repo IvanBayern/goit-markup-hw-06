@@ -754,6 +754,8 @@ address
 
         outline: none;
 
+        cursor: pointer;
+
         transition-property: border-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -774,6 +776,7 @@ address
         height: 24px;
         margin-left: 10px;
         fill: var(--white-txt-cl);
+        
 }
 .form-field-label{
     display: block;
@@ -783,6 +786,8 @@ address
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
+
+        cursor: pointer;
     
 }
 .form-field-input{
@@ -792,6 +797,8 @@ address
     border:1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none; 
+
+    cursor: pointer;
 
     transition-property: border-color;
         transition-duration: 250ms;
@@ -820,6 +827,8 @@ address
     transform: translateY(-50%);
     fill: var(--black-txt-cl);
 
+    cursor: pointer;
+
     transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -833,12 +842,15 @@ address
     resize: none;
     outline: none;
 
+    cursor: pointer;
+
     transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field-link{
     color: var(--blu-cl);
+    
 }
 .modal-form-btn{
     width: 200px;
@@ -854,10 +866,12 @@ address
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 .checkbox-input{
     appearance: none;
+    cursor: pointer;
 }
 /*.checkbox-control{
     display: flex;
@@ -953,6 +967,16 @@ address
     height: 30px;
     background-color: var(--white-txt-cl);
 
+    cursor: pointer;
+
+    
+}
+
+.modal-close-btn:hover .modal-close {
+    fill: var(--blu-cl);
+}
+.modal-close-btn:focus .modal-close {
+    fill: var(--blu-cl);
 }
 .modal-close{
     position:absolute;
@@ -961,6 +985,10 @@ address
     transform: translate(-50%, -50%);
 
     fill: #000000;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden{
