@@ -751,6 +751,12 @@ address
         background-color: transparent;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
+
+        outline: none;
+
+        transition-property: border-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-email:focus{
     border-color: var(--blu-cl);
@@ -786,6 +792,10 @@ address
     border:1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none; 
+
+    transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .form-field-input:focus{
@@ -809,6 +819,10 @@ address
     left: 14px;
     transform: translateY(-50%);
     fill: var(--black-txt-cl);
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field-textarea{
     padding: 12px 16px;
@@ -818,6 +832,13 @@ address
     border-radius: 4px;
     resize: none;
     outline: none;
+
+    transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field-link{
+    color: var(--blu-cl);
 }
 .modal-form-btn{
     width: 200px;
@@ -873,6 +894,10 @@ address
     transform: translateY(-50%);
     opacity: 1;
 
+    transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .checkbox-input:checked~.checkbox-icon {
@@ -886,6 +911,10 @@ address
     transform: translateY(-50%);
 
     opacity: 0;
+
+    transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
